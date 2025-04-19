@@ -1,19 +1,11 @@
 # Medical Image Segmentation Using Directional Window Attention
 ![](https://i.imgur.com/waxVImv.png)
-Daniya Najiha Abdul Kareem, Mustansar Fiaz<sup>1</sup>, Noa Novershtern, Hisham Cholakkal<sup>1</sup>
+Daniya Najiha Abdul Kareem<sup>1</sup>, Mustansar Fiaz<sup>1</sup>, Noa Novershtern<sup>2</sup>,, Hisham Cholakkal<sup>1</sup>
 
-Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, University of California Merced<sup>2</sup>, Google Research<sup>3</sup>, Linkoping University<sup>4</sup>
+Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, Weizmann Institute of Science<sup>2</sup>
 
-[![paper](https://img.shields.io/badge/Paper-<COLOR>.svg)](https://ieeexplore.ieee.org/document/10526382)
-[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://amshaker.github.io/unetr_plus_plus/)
-[![slides](https://img.shields.io/badge/Presentation-Slides-B762C1)](https://docs.google.com/presentation/d/e/2PACX-1vRtrxSfA2kU1fBmPxBdMQioLfsvjcjWBoaOVf3aupqajm0mw_C4TEz05Yk4ZF_vqoMyA8iiUJE60ynm/pub?start=true&loop=false&delayms=10000)
-
-
-## :rocket: News
-* **(May 04, 2024):** We're thrilled to share that UNETR++ has been accepted to IEEE TMI-2024! 🎊.
-* **(Jun 01, 2023):** UNETR++ code & weights are released for Decathlon-Lung and BRaTs.
-* **(Dec 15, 2022):** UNETR++ weights are released for Synapse & ACDC datasets.
-* **(Dec 09, 2022):** UNETR++ training and evaluation codes are released.
+[![paper](https://img.shields.io/badge/Paper-<COLOR>.svg)](https://arxiv.org/abs/2406.17471)
+[![slides](https://img.shields.io/badge/Presentation-Slides-B762C1)](https://drive.google.com/file/d/1KmXEHuCjIsd1wcijshOtzuIWH3Lw-IP3/view?usp=drive_link)
 
 <hr />
 
