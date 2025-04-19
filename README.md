@@ -16,10 +16,8 @@ Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, Weizmann In
 ## Results
 
 ### Synapse Dataset
-State-of-the-art comparison on the abdominal multi-organ Synapse dataset. We report both the segmentation performance (DSC, HD95) and model complexity (parameters and FLOPs).
-Our proposed UNETR++ achieves favorable segmentation performance against existing methods, while being considerably reducing the model complexity. Best results are in bold. 
-Abbreviations stand for: Spl: _spleen_, RKid: _right kidney_, LKid: _left kidney_, Gal: _gallbladder_, Liv: _liver_, Sto: _stomach_, Aor: _aorta_, Pan: _pancreas_. 
-Best results are in bold.
+State-of-the-art comparison on the abdominal multi-organ Synapse dataset. We report both the segmentation performance (DSC, HD95).
+Our proposed DwinFormer achieves favorable segmentation performance against existing methods. Best results are in bold. 
 
 ![Synapse Results](media/synapse_results.png)
 
@@ -28,15 +26,10 @@ Best results are in bold.
 ## Qualitative Comparison
 
 ### Synapse Dataset
-Qualitative comparison on multi-organ segmentation task. Here, we compare our UNETR++ with existing methods: UNETR, Swin UNETR, and nnFormer. 
+Qualitative comparison on multi-organ segmentation task. Here, we compare our method with existing methods: Swin UNETR, and nnFormer. 
 The different abdominal organs are shown in the legend below the examples. Existing methods struggle to correctly segment different organs (marked in red dashed box). 
-Our UNETR++ achieves promising segmentation performance by accurately segmenting the organs.
+Our DwinFormer achieves promising segmentation performance by accurately segmenting the organs.
 ![Synapse Qual Results](media/UNETR++_results_fig_synapse.jpg)
-
-### ACDC Dataset
-Qualitative comparison on the ACDC dataset. We compare our UNETR++ with existing methods: UNETR and nnFormer. It is noticeable that the existing methods struggle to correctly segment different organs (marked in red dashed box). Our UNETR++ achieves favorable segmentation performance by accurately segmenting the organs.  Our UNETR++ achieves promising segmentation performance by accurately segmenting the organs.
-![ACDC Qual Results](media/acdc_vs_unetr_suppl.jpg)
-
 
 <hr />
 
@@ -45,8 +38,8 @@ The code is tested with PyTorch 1.11.0 and CUDA 11.3. After cloning the reposito
 
 1. Create and activate conda environment
 ```shell
-conda create --name unetr_pp python=3.8
-conda activate unetr_pp
+conda create --name dwinformer python=3.8
+conda activate dwinformer
 ```
 2. Install PyTorch and torchvision
 ```shell
@@ -60,14 +53,13 @@ pip install -r requirements.txt
 
 
 ## Dataset
-We follow the same dataset preprocessing as in [nnFormer](https://github.com/282857341/nnFormer). We conducted extensive experiments on five benchmarks: Synapse, BTCV, ACDC, BRaTs, and Decathlon-Lung. 
-
+We follow the same dataset preprocessing as in [nnFormer](https://github.com/282857341/nnFormer).
 The dataset folders for Synapse should be organized as follows: 
 
 ```
 ./DATASET_Synapse/
-  ├── unetr_pp_raw/
-      ├── unetr_pp_raw_data/
+  ├── dwinformer_raw/
+      ├── dwinformer_raw_data/
            ├── Task02_Synapse/
               ├── imagesTr/
               ├── imagesTs/
@@ -75,62 +67,12 @@ The dataset folders for Synapse should be organized as follows:
               ├── labelsTs/
               ├── dataset.json
            ├── Task002_Synapse
-       ├── unetr_pp_cropped_data/
+       ├── dwinformer_cropped_data/
            ├── Task002_Synapse
  ```
  
- The dataset folders for ACDC should be organized as follows: 
-
-```
-./DATASET_Acdc/
-  ├── unetr_pp_raw/
-      ├── unetr_pp_raw_data/
-           ├── Task01_ACDC/
-              ├── imagesTr/
-              ├── imagesTs/
-              ├── labelsTr/
-              ├── labelsTs/
-              ├── dataset.json
-           ├── Task001_ACDC
-       ├── unetr_pp_cropped_data/
-           ├── Task001_ACDC
- ```
- 
-  The dataset folders for Decathlon-Lung should be organized as follows: 
-
-```
-./DATASET_Lungs/
-  ├── unetr_pp_raw/
-      ├── unetr_pp_raw_data/
-           ├── Task06_Lung/
-              ├── imagesTr/
-              ├── imagesTs/
-              ├── labelsTr/
-              ├── labelsTs/
-              ├── dataset.json
-           ├── Task006_Lung
-       ├── unetr_pp_cropped_data/
-           ├── Task006_Lung
- ```
-   The dataset folders for BRaTs should be organized as follows: 
-
-```
-./DATASET_Tumor/
-  ├── unetr_pp_raw/
-      ├── unetr_pp_raw_data/
-           ├── Task03_tumor/
-              ├── imagesTr/
-              ├── imagesTs/
-              ├── labelsTr/
-              ├── labelsTs/
-              ├── dataset.json
-           ├── Task003_tumor
-       ├── unetr_pp_cropped_data/
-           ├── Task003_tumor
- ```
- 
 Please refer to [Setting up the datasets](https://github.com/282857341/nnFormer) on nnFormer repository for more details.
-Alternatively, you can download the preprocessed dataset for [Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg), [ACDC](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EY9qieTkT3JFrhCJQiwZXdsB1hJ4ebVAtNdBNOs2HAo3CQ?e=VwfFHC), [Decathlon-Lung](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EWhU1T7c-mNKgkS2PQjFwP0B810LCiX3D2CvCES2pHDVSg?e=OqcIW3), [BRaTs](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EaQOxpD2yE5Btl-UEBAbQa0BYFBCL4J2Ph-VF_sqZlBPSQ?e=DFY41h), and extract it under the project directory.
+Alternatively, you can download the preprocessed dataset for [Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg) and extract it under the project directory.
 
 ## Training
 The following scripts can be used for training our UNETR++ model on the datasets:
