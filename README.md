@@ -19,7 +19,7 @@ Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, Weizmann In
 State-of-the-art comparison on the abdominal multi-organ Synapse dataset. We report both the segmentation performance (DSC, HD95).
 Our proposed DwinFormer achieves favorable segmentation performance against existing methods. Best results are in bold. 
 
-![Synapse Results](media/synapse_results.png)
+![Synapse Results](media/results.png)
 
 <hr />
 
@@ -29,7 +29,7 @@ Our proposed DwinFormer achieves favorable segmentation performance against exis
 Qualitative comparison on multi-organ segmentation task. Here, we compare our method with existing methods: Swin UNETR, and nnFormer. 
 The different abdominal organs are shown in the legend below the examples. Existing methods struggle to correctly segment different organs (marked in red dashed box). 
 Our DwinFormer achieves promising segmentation performance by accurately segmenting the organs.
-![Synapse Qual Results](media/UNETR++_results_fig_synapse.jpg)
+![Synapse Qual Results](media/qual.png)
 
 <hr />
 
