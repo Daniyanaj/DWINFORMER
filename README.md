@@ -1,6 +1,6 @@
 # Medical Image Segmentation Using Directional Window Attention
 ![](https://i.imgur.com/waxVImv.png)
-[Daniya Najiha Abdul Kareem], [Mustansar Fiaz]<sup>1</sup>, [Noa Novershtern], [Hisham Cholakkal](https://salman-h-khan.github.io/)<sup>1</sup>
+Daniya Najiha Abdul Kareem, Mustansar Fiaz<sup>1</sup>, Noa Novershtern, Hisham Cholakkal<sup>1</sup>
 
 Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, University of California Merced<sup>2</sup>, Google Research<sup>3</sup>, Linkoping University<sup>4</sup>
 
