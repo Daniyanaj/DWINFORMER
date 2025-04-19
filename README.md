@@ -19,7 +19,7 @@ Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, Weizmann In
 State-of-the-art comparison on the abdominal multi-organ Synapse dataset. We report both the segmentation performance (DSC, HD95).
 Our proposed DwinFormer achieves favorable segmentation performance against existing methods. Best results are in bold. 
 
-![Synapse Results](MEDIA/result.jpeg)
+![Synapse Results](MEDIA/download.jpeg)
 
 <hr />
 
