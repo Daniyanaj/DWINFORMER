@@ -20,7 +20,7 @@ State-of-the-art comparison on the abdominal multi-organ Synapse dataset. We rep
 Our proposed DwinFormer achieves favorable segmentation performance against existing methods. Best results are in bold. 
 
 <p align="center">
-  <img src="MEDIA/result.png" alt="Synapse Results" width="200">
+  <img src="MEDIA/result.png" alt="Synapse Results" width="300">
 </p>
 
 <hr />
