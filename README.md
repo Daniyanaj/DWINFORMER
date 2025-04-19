@@ -1,6 +1,6 @@
-# UNETR++: Delving into Efficient and Accurate 3D Medical Image Segmentation
+# Medical Image Segmentation Using Directional Window Attention
 ![](https://i.imgur.com/waxVImv.png)
-[Abdelrahman Shaker](https://scholar.google.com/citations?hl=en&user=eEz4Wu4AAAAJ)<sup>*1</sup>, [Muhammad Maaz](https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra)<sup>1</sup>, [Hanoona Rasheed](https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl=en&authuser=1&oi=sra)<sup>1</sup>, [Salman Khan](https://salman-h-khan.github.io/)<sup>1</sup>, [Ming-Hsuan Yang](https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en)<sup>2,3</sup> and [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en)<sup>1,4</sup>
+[Daniya Najiha Abdul Kareem], [Mustansar Fiaz]<sup>1</sup>, [Noa Novershtern], [Hisham Cholakkal](https://salman-h-khan.github.io/)<sup>1</sup>
 
 Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, University of California Merced<sup>2</sup>, Google Research<sup>3</sup>, Linkoping University<sup>4</sup>
 
