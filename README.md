@@ -77,12 +77,9 @@ Please refer to [Setting up the datasets](https://github.com/282857341/nnFormer)
 Alternatively, you can download the preprocessed dataset for [Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg) and extract it under the project directory.
 
 ## Training
-The following scripts can be used for training our UNETR++ model on the datasets:
+The following script can be used for training our DwinFormer model on the Multi-organ Synapse dataset:
 ```shell
 bash training_scripts/run_training_synapse.sh
-bash training_scripts/run_training_acdc.sh
-bash training_scripts/run_training_lung.sh
-bash training_scripts/run_training_tumor.sh
 ```
 
 <hr />
@@ -99,35 +96,6 @@ Then, run
 ```shell
 bash evaluation_scripts/run_evaluation_synapse.sh
 ```
-2- Download [ACDC weights](https://drive.google.com/file/d/15YXiHai1zLc1ycmXaiSHetYbLGum3tV5) and paste ```model_final_checkpoint.model``` it in the following path:
-```shell
-unetr_pp/evaluation/unetr_pp_acdc_checkpoint/unetr_pp/3d_fullres/Task001_ACDC/unetr_pp_trainer_acdc__unetr_pp_Plansv2.1/fold_0/
-```
-Then, run 
-```shell
-bash evaluation_scripts/run_evaluation_acdc.sh
-```
-
-
-3- Download [Decathlon-Lung weights](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/ETAlc8WTjV1BhZx7zwFpA8UBS4og6upb1qX2UKkypMoTjw?e=KfzAiG) and paste ```model_final_checkpoint.model``` it in the following path:
-```shell
-unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task006_Lung/unetr_pp_trainer_lung__unetr_pp_Plansv2.1/fold_0/
-```
-Then, run 
-```shell
-bash evaluation_scripts/run_evaluation_lung.sh
-```
-
-4- Download [BRaTs weights](https://drive.google.com/file/d/1LiqnVKKv3DrDKvo6J0oClhIFirhaz5PG) and paste ```model_final_checkpoint.model``` it in the following path:
-```shell
-unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task003_tumor/unetr_pp_trainer_tumor__unetr_pp_Plansv2.1/fold_0/
-```
-Then, run 
-```shell
-bash evaluation_scripts/run_evaluation_tumor.sh
-```
-
-<hr />
 
 ## Acknowledgement
 This repository is built based on [nnFormer](https://github.com/282857341/nnFormer) repository.
@@ -135,14 +103,18 @@ This repository is built based on [nnFormer](https://github.com/282857341/nnForm
 ## Citation
 If you use our work, please consider citing:
 ```bibtex
-@ARTICLE{10526382,
-  title={UNETR++: Delving into Efficient and Accurate 3D Medical Image Segmentation}, 
-  author={Shaker, Abdelrahman M. and Maaz, Muhammad and Rasheed, Hanoona and Khan, Salman and Yang, Ming-Hsuan and Khan, Fahad Shahbaz},
-  journal={IEEE Transactions on Medical Imaging}, 
+@INPROCEEDINGS{10635414,
+  author={Kareem, Daniya Najiha A. and Fiaz, Mustansar and Novershtern, Noa and Cholakkal, Hisham},
+  booktitle={2024 IEEE International Symposium on Biomedical Imaging (ISBI)}, 
+  title={Medical Image Segmentation Using Directional Window Attention}, 
   year={2024},
-  doi={10.1109/TMI.2024.3398728}}
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Image segmentation;Image coding;Three-dimensional displays;Microprocessors;Source coding;Computer architecture;Transformers},
+  doi={10.1109/ISBI56570.2024.10635414}}
 
 ```
 
 ## Contact
-Should you have any question, please create an issue on this repository or contact me at abdelrahman.youssief@mbzuai.ac.ae.
+Should you have any question, please create an issue on this repository or contact me at daniya.kareem@mbzuai.ac.ae.
