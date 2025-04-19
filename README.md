@@ -9,7 +9,7 @@ Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, Weizmann In
 
 <hr />
 <p align="center">
-  <img src="MEDIA/intro.jpg" alt="Architecture Figure" width="700">
+  <img src="MEDIA/intro.jpg" alt="Architecture Figure" width="800">
 </p>
 
 > **Abstract:** *Accurate segmentation of medical images is crucial for diagnostic purposes, including cell segmentation, tumor identification, and organ localization. Traditional convolutional neural network (CNN)-based approaches struggled to achieve precise segmentation results due to their limited receptive fields, particularly in cases involving multi-organ segmentation with varying shapes and sizes. The transformer-based approaches address this limitation by leveraging the global receptive field, but they often face challenges in capturing local information required for pixel-precise segmentation. In this work, we introduce DwinFormer, a hierarchical encoder-decoder architecture for medical image segmentation comprising a directional window (Dwin) attention and global self-attention (GSA) for feature encoding. The focus of our design is the introduction of Dwin block within DwinFormer that effectively captures local and global information along the horizontal, vertical, and depthwise directions of the input feature map by separately performing attention in each of these directional volumes. To this end, our Dwin block introduces a nested Dwin attention (NDA) that progressively increases the receptive field in horizontal, vertical, and depthwise directions and a convolutional Dwin attention (CDA) that captures local contextual information for the attention computation. While the proposed Dwin block captures local and global dependencies at the first two high-resolution stages of DwinFormer, the GSA block encodes global dependencies at the last two lower-resolution stages. Experiments over the challenging 3D Synapse Multi-organ dataset and Cell HMS dataset demonstrate the benefits of our DwinFormer over the state-of-the-art approaches.* 
@@ -33,8 +33,9 @@ Our proposed DwinFormer achieves favorable segmentation performance against exis
 Qualitative comparison on multi-organ segmentation task. Here, we compare our method with existing methods: Swin UNETR, and nnFormer. 
 The different abdominal organs are shown in the legend below the examples. Existing methods struggle to correctly segment different organs (marked in red dashed box). 
 Our DwinFormer achieves promising segmentation performance by accurately segmenting the organs.
-![Synapse Qual Results](MEDIA/qual.png)
-
+<p align="center">
+  <img src="MEDIA/qual.png" alt="Qualitative Results" width="800">
+</p>
 <hr />
 
 ## Installation
