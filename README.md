@@ -43,16 +43,8 @@ The code is tested with PyTorch 1.11.0 and CUDA 11.3. After cloning the reposito
 
 1. Create and activate conda environment
 ```shell
-conda create --name dwinformer python=3.8
+conda env create -f environment.yml
 conda activate dwinformer
-```
-2. Install PyTorch and torchvision
-```shell
-pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
-```
-3. Install other dependencies
-```shell
-pip install -r requirements.txt
 ```
 <hr />
 
@@ -82,7 +74,7 @@ Alternatively, you can download the preprocessed dataset for [Synapse](https://m
 ## Training
 The following script can be used for training our DwinFormer model on the Multi-organ Synapse dataset:
 ```shell
-bash training_scripts/run_training_synapse.sh
+bash script.sh
 ```
 
 <hr />
