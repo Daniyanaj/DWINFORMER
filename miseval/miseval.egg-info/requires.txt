@@ -1,0 +1,7 @@
+numpy<1.22,>=1.18
+scikit-learn>=1.0.2
+scikit-image>=0.19.1
+scipy>=1.7.3
+hausdorff>=0.2.6
+numba<=0.55.2,>=0.54.0
+dictances>=1.5.3
