@@ -81,15 +81,15 @@ bash script.sh
 
 ## Evaluation
 
-To reproduce the results of UNETR++: 
+To reproduce the results of dwinformer: 
 
-1- Download [Synapse weights](https://drive.google.com/file/d/13JuLMeDQRR_a3c3tr2V2oav6I29fJoBa) and paste ```model_final_checkpoint.model``` in the following path:
+1- Download [Synapse weights](https://drive.google.com/drive/u/3/folders/1gUIUL-tNqlkSzky51GJBMvivdyH7WA6Q?dmr=1&ec=wgc-drive-hero-goto) and paste ```model_best.model``` in the following path:
 ```shell
-unetr_pp/evaluation/unetr_pp_synapse_checkpoint/unetr_pp/3d_fullres/Task002_Synapse/unetr_pp_trainer_synapse__unetr_pp_Plansv2.1/fold_0/
+dwinformer/3d_fullres/Task002_Synapse/dwinformerTrainerV2_dwinformer_synapse__dwinformerPlansv2.1/fold_0/
 ```
 Then, run 
 ```shell
-bash evaluation_scripts/run_evaluation_synapse.sh
+bash script.sh
 ```
 
 ## Acknowledgement
